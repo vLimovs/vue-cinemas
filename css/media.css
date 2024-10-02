@@ -1,0 +1,85 @@
+@media (max-width: 1140px) {
+    .main-title{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 992px) {
+    .trailer{
+        background: linear-gradient(90deg, #def7ff73 0%, #f4fcff73 45.31%, rgba(255, 255, 255, 0) 100%);
+        text-align: center;
+    }
+    .trailer p{
+        margin: 30px auto;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger{
+        display: block;
+        visibility: visible;
+    }
+    .header__nav-list{
+        flex-direction: column;
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(180,106,0,0.694187880230217) 0%, rgba(93,22,22,0.5709385805103291) 50%, rgba(252,176,69,0.41687695586046913) 100%);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transform: translateY(-200%);
+        transition: 900ms;
+    }
+    .burger:hover ~ .header__nav-list{
+        transform: translateY(0);
+    }
+    .header__nav-list a{
+        font-size: 18px;
+    }
+    .series__grid{
+        grid-template-rows: repeat(4, 202px);
+    }
+    .series__grid-card:first-of-type{
+        grid-column: span 12;
+    }
+    .series__grid-card {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 476px) {
+    .trailer img{
+        width: 100%;
+    }
+    .trailer p{
+        line-height: 21px;
+        font-size: 18px;
+    }
+    .series__grid {
+        grid-template-rows: repeat(6, 202px);
+    }
+    .series__grid-card{
+        grid-column: span 12;
+    }
+    .series__main p {
+        line-height: 18px;
+    }
+    .series__main h3 {
+        font-size: 26px;
+    }
+    .header__content h1 {
+        font-size: 44px;
+    }
+    .btn {
+        display: inline;
+        padding: 17px 23px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .header__content {
+        background: url('../images/headerBgAdapt.jpg') center / cover fixed;
+        background-color: rgba(7, 15, 25, 0.75);
+        background-blend-mode: multiply;
+    }
+}
